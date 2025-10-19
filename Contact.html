@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Mayank Group</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background-color: #fff; 
+        }
+        .font-cinzel { 
+            font-family: 'Cinzel', serif; 
+        }
+        ::placeholder { 
+            color: #800000a0; /* maroon with opacity */
+            opacity: 1; 
+        }
+        input[type=number]::-webkit-inner-spin-button, 
+        input[type=number]::-webkit-outer-spin-button { 
+            -webkit-appearance: none; 
+            margin: 0; 
+        }
+        input[type=number] { 
+            -moz-appearance: textfield; 
+        }
+        .form-input:focus { 
+            outline: none; 
+            border-color: #8000006b; 
+        }
+        .dropdown:hover .dropdown-menu, .dropdown:focus-within .dropdown-menu { 
+            display: block; 
+        }
+    </style>
+</head>
+<body class="text-[#800000] antialiased bg-white">
+    <!-- Navbar -->
+    <nav class="bg-white sticky top-0 z-30 shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+        <div class="flex justify-between items-center py-4">
+            <!-- Logo and Brand -->
+            <div class="flex items-center">
+                <img src="MGL.png" alt="Mayank Group Logo" class="h-12 w-auto mr-3">
+                <span class="font-cinzel text-2xl font-bold text-[#800000]">Mayank Group</span>
+            </div>
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="Builders and Developers in Vasai Nalasopara _ Imperial Lifestyle – Imperial Builders_files\index.html" class="hover:text-[#D4AF37] transition">Home</a>
+
+
+                <div class="relative dropdown">
+                    <button class="hover:text-[#D4AF37] flex items-center focus:outline-none text-[#800000]">
+                        About
+                        <svg class="ml-1 w-4 h-4" fill="none" stroke="#800000" stroke-width="2" viewBox="0 0 24 24">
+                            <path d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="absolute left-0 mt-2 w-48 bg-white border border-[#D4AF37]/30 rounded-lg shadow-lg text-[#800000] dropdown-menu hidden">
+                        <a href="#" class="block px-4 py-2 hover:bg-[#800000]/10 transition">About Mayank Group</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-[#800000]/10 transition">Mayank Group History</a>
+                    </div>
+                </div>
+                <div class="relative dropdown">
+                    <button class="hover:text-[#D4AF37] flex items-center focus:outline-none text-[#800000]">
+                        Projects
+                        <svg class="ml-1 w-4 h-4" fill="none" stroke="#800000" stroke-width="2" viewBox="0 0 24 24">
+                            <path d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="absolute left-0 mt-2 w-48 bg-white border border-[#D4AF37]/30 rounded-lg shadow-lg text-[#800000] dropdown-menu hidden">
+                        <a href="#" class="block px-4 py-2 hover:bg-[#800000]/10 transition">Vasai(E)</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-[#800000]/10 transition">Vasai(W)</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-[#800000]/10 transition">Nalasopara</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-[#800000]/10 transition">Boisar</a>
+                    </div>
+                </div>
+                <a href="redevelopment.html" class="hover:text-[#D4AF37] transition">Redevelopments</a>
+                <a href="#" class="hover:text-[#D4AF37] transition">Partners</a>
+                <a href="#" class="hover:text-[#D4AF37] transition">Contact</a>
+            </div>
+            <!-- Hamburger for Mobile -->
+            <div class="md:hidden flex items-center">
+                <button id="hamburger" class="focus:outline-none">
+                    <svg class="w-8 h-8" fill="none" stroke="#800000" stroke-width="2"
+                         viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                              d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="md:hidden hidden flex-col space-y-1 pb-4 bg-white text-[#800000]">
+            <a href="Builders and Developers in Vasai Nalasopara _ Imperial Lifestyle – Imperial Builders.html" class="block px-4 py-2 hover:bg-[#800000]/10 rounded transition">Home</a>
+            <div class="relative">
+                <button class="w-full flex justify-between items-center px-4 py-2 hover:bg-[#800000]/10 rounded transition focus:outline-none" onclick="toggleDropdown('aboutMobileDropdown')">
+                    About
+                    <svg class="ml-2 w-4 h-4" fill="none" stroke="#800000" stroke-width="2" viewBox="0 0 24 24">
+                        <path d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <div id="aboutMobileDropdown" class="hidden ml-4 mt-1">
+                    <a href="#about-mayank-group" class="block px-4 py-2 hover:bg-[#800000]/10 rounded transition">About Mayank Group</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-[#800000]/10 rounded transition">Mayank Group History</a>
+                </div>
+            </div>
+            <div class="relative">
+                <button class="w-full flex justify-between items-center px-4 py-2 hover:bg-[#800000]/10 rounded transition focus:outline-none" onclick="toggleDropdown('projectsMobileDropdown')">
+                    Projects
+                    <svg class="ml-2 w-4 h-4" fill="none" stroke="#800000" stroke-width="2" viewBox="0 0 24 24">
+                        <path d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <div id="projectsMobileDropdown" class="hidden ml-4 mt-1">
+                    <a href="#" class="block px-4 py-2 hover:bg-[#800000]/10 rounded transition">Vasai(E)</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-[#800000]/10 rounded transition">Vasai(W)</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-[#800000]/10 rounded transition">Nalasopara</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-[#800000]/10 rounded transition">Boisar</a>
+                </div>
+            </div>
+            <a href="redevelopment.html" class="block px-4 py-2 hover:bg-[#800000]/10 rounded transition">Redevelopments</a>
+            <a href="#" class="block px-4 py-2 hover:bg-[#800000]/10 rounded transition">Partners</a>
+            <a href="Contact.html" class="block px-4 py-2 hover:bg-[#800000]/10 rounded transition">Contact</a>
+        </div>
+    </div>
+</nav>
+
+
+    <div class="min-h-screen flex items-center justify-center p-4 sm:p-8 bg-white">
+        <div class="w-full max-w-xl mx-auto">
+            <!-- Header -->
+            <div class="text-center mb-10 mt-12">
+                <h1 class="font-cinzel text-4xl sm:text-5xl md:text-6xl font-bold text-[#800000]">Mayank Group</h1>
+                <p class="text-[#800000]/80 mt-2 text-lg">The home is where your story begins</p>
+            </div>
+            <!-- Contact Form -->
+            <form id="contactForm" class="space-y-10">
+                <!-- First Name -->
+                <div class="relative">
+                    <label for="firstName" class="absolute -top-3.5 left-0 text-sm text-[#800000]">First Name</label>
+                    <input type="text" id="firstName" name="firstName" class="form-input w-full bg-transparent border-0 border-b-2 border-[#800000]/50 py-2 text-[#800000] focus:border-[#800000] transition-colors duration-300" placeholder="John" required>
+                </div>
+                <!-- Last Name -->
+                <div class="relative">
+                    <label for="lastName" class="absolute -top-3.5 left-0 text-sm text-[#800000]">Last Name</label>
+                    <input type="text" id="lastName" name="lastName" class="form-input w-full bg-transparent border-0 border-b-2 border-[#800000]/50 py-2 text-[#800000] focus:border-[#800000] transition-colors duration-300" placeholder="Doe" required>
+                </div>
+                <!-- Phone Number -->
+                <div class="relative">
+                    <label for="phone" class="absolute -top-3.5 left-0 text-sm text-[#800000]">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" class="form-input w-full bg-transparent border-0 border-b-2 border-[#800000]/50 py-2 text-[#800000] focus:border-[#800000] transition-colors duration-300" placeholder="(123) 456-7890" required>
+                </div>
+                <!-- Email Address -->
+                <div class="relative">
+                    <label for="email" class="absolute -top-3.5 left-0 text-sm text-[#800000]">Email Address</label>
+                    <input type="email" id="email" name="email" class="form-input w-full bg-transparent border-0 border-b-2 border-[#800000]/50 py-2 text-[#800000] focus:border-[#800000] transition-colors duration-300" placeholder="john.doe@example.com" required>
+                </div>
+                <!-- Message Field -->
+                <div class="relative">
+                    <label for="message" class="absolute -top-3.5 left-0 text-sm text-[#800000]">Message</label>
+                    <textarea id="message" name="message" rows="4" class="form-input w-full bg-transparent border-0 border-b-2 border-[#800000]/50 py-2 text-[#800000] focus:border-[#800000] transition-colors duration-300 resize-none" placeholder="I'm interested in..." required></textarea>
+                </div>
+                <!-- Submit Button and Status Message -->
+                <div class="text-center pt-4">
+                    <button type="submit" class="bg-[#800000] text-white font-bold py-3 px-12 rounded-lg hover:bg-[#a32121] transition-all duration-300 ease-in-out transform hover:scale-105">
+                        Send Message
+                    </button>
+                    <p id="statusMessage" class="mt-4 text-sm text-[#800000]/90 h-5"></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        // Hamburger toggle
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobileMenu');
+        hamburger.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Mobile dropdowns
+        function toggleDropdown(id) {
+            document.getElementById(id).classList.toggle('hidden');
+        }
+
+        // Form Submission Script
+        const form = document.getElementById('contactForm');
+        const statusMessage = document.getElementById('statusMessage');
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            if (form.checkValidity()) {
+                statusMessage.textContent = 'Thank you! Your message has been sent.';
+                statusMessage.style.color = '#2c6b2e';
+                setTimeout(() => {
+                    form.reset();
+                    statusMessage.textContent = '';
+                }, 4000);
+            } else {
+                statusMessage.textContent = 'Please fill out all required fields correctly.';
+                statusMessage.style.color = '#a32121';
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayank Group - Our Promise</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        .font-cinzel {
+            font-family: 'Cinzel', serif;
+        }
+        .font-lato {
+            font-family: 'Lato', Arial, Helvetica, sans-serif;
+        }
+        .dropdown-menu {
+            display: none;
+        }
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+        .bg-footer {
+            background-color: #fff !important;
+        }
+        .footer-widget p, .footer-widget a, .copyright p, .copyright a, .copyright ul li {
+            font-family: 'Lato', Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            color: #222;
+        }
+        .footer-widget .widget-title {
+            font-family: 'Lato', Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            color: #72263b;
+            margin-bottom: 24px;
+        }
+        .footer-widget ul {
+            list-style: none;
+            padding: 0;
+        }
+        .footer-widget ul li a {
+            line-height: 2;
+            text-decoration: none;
+            display: block;
+        }
+        .footer-logo img {
+            max-width: 100%;
+            max-height: 90px;
+            height: auto;
+            width: auto;
+        }
+        .media-widget a {
+            font-size: 22px;
+            margin-right: 12px;
+        }
+        .btn-primary {
+            background: #72263b;
+            border: none;
+            color: #fff;
+            font-size: 16px;
+            padding: 10px 0;
+            border-radius: 4px;
+            margin-top: 8px;
+            width: 90%;
+            display: block;
+            text-align: center;
+        }
+        @media (max-width: 767px) {
+            .footer-widget .widget-title,
+            .footer-widget ul,
+            .footer-widget p,
+            .media-widget {
+                text-align: center;
+            }
+            .footer-widget .btn-primary {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Navigation -->
+    <nav class="bg-white sticky top-0 z-30 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <img src="MGL.png" alt="Mayank Group Logo" class="h-12 w-auto mr-3 ">
+                    <span class="font-cinzel text-2xl font-bold text-[#800000]">Mayank Group</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="" class="hover:text-[#D4AF37] transition">Home</a>
+                    <div class="relative dropdown">
+                        <button class="hover:text-[#D4AF37] flex items-center focus:outline-none text-[#800000]">
+                            About
+                            <svg class="ml-1 w-4 h-4" fill="none" stroke="#800000" stroke-width="2" viewBox="0 0 24 24">
+                                <path d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="absolute left-0 mt-2 w-48 bg-white border border-[#D4AF37]/30 rounded-lg shadow-lg text-[#800000] dropdown-menu hidden">
+                            <a href="#" class="block px-4 py-2 hover:bg-[#800000]/10 transition">About Mayank Group</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-[#800000]/10 transition">Promise by Mayank Group</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-[#800000]/10 transition">Mayank Group History</a>
+                        </div>
+                    </div>
+                    <div class="relative dropdown">
+                        <button class="hover:text-[#D4AF37] flex items-center focus:outline-none text-[#800000]">
+                            Projects
+                            <svg class="ml-1 w-4 h-4" fill="none" stroke="#800000" stroke-width="2" viewBox="0 0 24 24">
+                                <path d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="absolute left-0 mt-2 w-48 bg-white border border-[#D4AF37]/30 rounded-lg shadow-lg text-[#800000] dropdown-menu hidden">
+                            <a href="#" class="block px-4 py-2 hover:bg-[#800000]/10 transition">Vasai(E)</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-[#800000]/10 transition">Vasai(W)</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-[#800000]/10 transition">Nalasopara</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-[#800000]/10 transition">Boisar</a>
+                        </div>
+                    </div>
+                    <a href="redevelopment.html" class="hover:text-[#D4AF37] transition">Redevelopments</a>
+                    <a href="#" class="hover:text-[#D4AF37] transition">Partners</a>
+                    <a href="Contact.html" class="hover:text-[#D4AF37] transition">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="hamburger" class="focus:outline-none">
+                        <svg class="w-8 h-8" fill="none" stroke="#800000" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div id="mobileMenu" class="md:hidden hidden flex-col space-y-1 pb-4 bg-white text-[#800000]">
+                <a href="#" class="block px-4 py-2 hover:bg-[#800000]/10 rounded transition">Home</a>
+                <div class="relative">
+                    <button class="w-full flex justify-between items-center px-4 py-2 hover:bg-[#800000]/10 rounded transition focus:outline-none" onclick="toggleDropdown('aboutMobileDropdown')">
+                        About
+                        <svg class="ml-2 w-4 h-4" fill="none" stroke="#800000" stroke-width="2" viewBox="0 0 24 24">
+                            <path d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div id="aboutMobileDropdown" class="hidden ml-4 mt-1">
+                        <a href="#" class="block px-4 py-2 hover:bg-[#800000]/10 rounded transition">About Mayank Group</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-[#800000]/10 rounded transition">Mayank Group History</a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <button class="w-full flex justify-between items-center px-4 py-2 hover:bg-[#800000]/10 rounded transition focus:outline-none" onclick="toggleDropdown('projectsMobileDropdown')">
+                        Projects
+                        <svg class="ml-2 w-4 h-4" fill="none" stroke="#800000" stroke-width="2" viewBox="0 0 24 24">
+                            <path d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div id="projectsMobileDropdown" class="hidden ml-4 mt-1">
+                        <a href="#" class="block px-4 py-2 hover:bg-[#800000]/10 rounded transition">Vasai(E)</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-[#800000]/10 rounded transition">Vasai(W)</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-[#800000]/10 rounded transition">Nalasopara</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-[#800000]/10 rounded transition">Boisar</a>
+                    </div>
+                </div>
+                <a href="redevelopments.html" class="block px-4 py-2 hover:bg-[#800000]/10 rounded transition">Redevelopments</a>
+                <a href="#" class="block px-4 py-2 hover:bg-[#800000]/10 rounded transition">Partners</a>
+                <a href="contact.html" class="block px-4 py-2 hover:bg-[#800000]/10 rounded transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- OUR PROMISE Responsive Banner Section -->
+    <section class="relative w-full min-h-[340px] sm:min-h-[400px] md:min-h-[480px] lg:min-h-[560px] flex items-center justify-center overflow-hidden text-white">
+    <div class="absolute inset-0 w-full h-full">
+        <img src="MGL.png" alt="Our Promise Banner" class="w-full h-full object-cover object-center" width="100%" height="100%">
+        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+    </div>
+    <div class="relative z-10 w-full max-w-3xl px-3 text-center flex flex-col items-center">
+        <h1 class="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-cinzel font-bold mb-4"
+            style="text-shadow: 2px 2px 8px rgba(47, 20, 20, 0.7)">
+            OUR PROMISE
+        </h1>
+        <p class="text-base sm:text-xl md:text-2xl font-lato"
+           style="text-shadow: 1px 1px 6px rgba(0,0,0,0.7)">
+            Building Dreams, Delivering Trust, Crafting Legacies.
+        </p>
+        <p class="text-base sm:text-xl md:text-2xl font-lato"
+           style="text-shadow: 1px 1px 6px rgba(0,0,0,0.7)">
+            Your Future, Our Commitment.
+        </p>
+    </div>
+</section>
+
+    <!-- Features Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
+            <h2 class="text-4xl font-cinzel font-bold text-[#800000] text-center mb-12">Our Unwavering Commitment to You</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Feature Card 1 -->
+                <div class="flex flex-col items-center text-center p-6 bg-gray-50 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-5xl text-[#D4AF37] mb-4">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 class="text-2xl font-cinzel font-semibold text-[#800000] mb-3">Integrity & Transparency</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        We commit to absolute honesty and clarity in all our dealings. Every promise made, every detail shared, is upheld with unwavering integrity, ensuring your complete peace of mind.
+                    </p>
+                </div>
+                <!-- Feature Card 2 -->
+                <div class="flex flex-col items-center text-center p-6 bg-gray-50 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-5xl text-[#D4AF37] mb-4">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3 class="text-2xl font-cinzel font-semibold text-[#800000] mb-3">Quality Craftsmanship</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        From foundation to finishing touches, we pledge superior quality. Utilizing premium materials and expert workmanship, we build homes that stand the test of time, blending aesthetics with durability.
+                    </p>
+                </div>
+                <!-- Feature Card 3 -->
+                <div class="flex flex-col items-center text-center p-6 bg-gray-50 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-5xl text-[#D4AF37] mb-4">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="text-2xl font-cinzel font-semibold text-[#800000] mb-3">Customer Centricity</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        Your needs and satisfaction are at the heart of everything we do. We promise personalized attention, clear communication, and dedicated support throughout your journey with us.
+                    </p>
+                </div>
+                <!-- Feature Card 4 -->
+                <div class="flex flex-col items-center text-center p-6 bg-gray-50 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-5xl text-[#D4AF37] mb-4">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3 class="text-2xl font-cinzel font-semibold text-[#800000] mb-3">Timely Delivery</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        We understand the importance of your timelines. Our commitment extends to delivering projects punctually, without compromising on the quality or the promises we make.
+                    </p>
+                </div>
+                <!-- Feature Card 5 -->
+                <div class="flex flex-col items-center text-center p-6 bg-gray-50 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-5xl text-[#D4AF37] mb-4">
+                        <i class="fas fa-tree"></i>
+                    </div>
+                    <h3 class="text-2xl font-cinzel font-semibold text-[#800000] mb-3">Sustainable Development</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        We are dedicated to building responsibly. Our promise includes integrating eco-friendly practices and sustainable designs to create environments that are harmonious with nature.
+                    </p>
+                </div>
+                <!-- Feature Card 6 -->
+                <div class="flex flex-col items-center text-center p-6 bg-gray-50 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-5xl text-[#D4AF37] mb-4">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3 class="text-2xl font-cinzel font-semibold text-[#800000] mb-3">Excellence & Innovation</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        Continuously striving for the best, we promise to embrace innovation in design and construction. Our goal is to set new benchmarks and deliver spaces that exceed expectations.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-footer py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="footer-widget text-center sm:text-left">
+                    <div class="footer-logo mb-4 flex justify-center sm:justify-start">
+                        <img src="MGL.png" alt="Mayank Group Logo" />
+                    </div>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Giving old cities a new life… with a touch of luxury where memories once lived, dreams now begin to bloom.
+                    </p>
+                    <div class="media-widget flex justify-center sm:justify-start space-x-4">
+                        <a href="#" class="text-gray-600 hover:text-blue-600"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-600 hover:text-red-600"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="text-gray-600 hover:text-blue-700"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/mayank.group?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="text-gray-600 hover:text-pink-600"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-widget">
+                    <h3 class="widget-title">Legal</h3>
+                    <ul>
+                        <li><a href="#" class="hover:text-[#72263b]">Terms and Conditions</a></li>
+                        <li><a href="#" class="hover:text-[#72263b]">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-[#72263b]">Copyright Notice</a></li>
+                        <li><a href="#" class="hover:text-[#72263b]">Disclaimer</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget">
+                    <h3 class="widget-title">Properties</h3>
+                    <ul>
+                        <li><a href="#" class="hover:text-[#72263b]">Vasai</a></li>
+                        <li><a href="#" class="hover:text-[#72263b]">Nallasopara</a></li>
+                        <li><a href="#" class="hover:text-[#72263b]">Boisar</a></li>
+                        <li><a href="#" class="hover:text-[#72263b]">All</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget">
+                    <h4 class="widget-title">Contact Details</h4>
+                    <ul class="space-y-2">
+                        <li>Shop No.02, Tania Sargam CHS LTD., Near The Capital Mall, Nallasopara East 401209</li>
+                        <li>+91 9850841234</li>
+                        <li><a href="mailto:mayankreality@gmail.com" class="hover:text-[#72263b]">mayankreality@gmail.com</a></li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary mt-4 inline-block text-center no-underline">Contact Now</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="copyright bg-white py-4 border-t">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center text-center md:text-left space-y-2 md:space-y-0">
+                <div class="text-sm text-gray-600">
+                    <p>&copy; <span id="copyright-year"></span> Mayank Group. All Rights Reserved.</p>
+                </div>
+                <div class="text-sm">
+                    <ul class="flex items-center space-x-4 text-gray-600">
+                        <li><a href="#" class="hover:text-[#72263b] transition">Privacy &amp; Policy</a></li>
+                        <li><span class="select-none">|</span></li>
+                        <li><a href="#" class="hover:text-[#72263b] transition">Site Map</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('hamburger').addEventListener('click', function() {
+            document.getElementById('mobileMenu').classList.toggle('hidden');
+        });
+
+        // Mobile dropdown toggles
+        function toggleDropdown(id) {
+            document.getElementById(id).classList.toggle('hidden');
+        }
+
+        // Set current year in the copyright section
+        document.getElementById('copyright-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
