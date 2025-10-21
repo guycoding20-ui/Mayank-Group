@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayank Group History & Previous Projects</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap"
+        rel="stylesheet" />
+
+    <style>
+        /* Define Brand Colors for Tailwind using CSS variables for clarity and consistency */
+        :root {
+            /* Using the darker maroon from your redevelopment file for main text/headings */
+            --color-maroon-dark: #6D2932;
+            --color-maroon-light: #800000;
+            --color-gold: #D4AF37;
+        }
+
+        /*
+         * Global Styles: Font and Text Color (Consistent with Redevelopment Page)
+         */
+        body {
+            font-family: Arial, sans-serif; /* Primary Font */
+            color: var(--color-maroon-dark); /* Default text color set to #6D2932 */
+        }
+        .font-cinzel {
+            font-family: "Cinzel", serif; /* Headings Font */
+        }
+        
+        /* General link styling: ensure links inherit body color or use explicit color */
+        a {
+            color: var(--color-maroon-dark);
+            transition: color 0.3s;
+        }
+        
+        /* Hover effect for all links to Gold */
+        a:hover, button:hover a {
+            color: var(--color-gold) !important;
+        }
+
+        /* Explicit utility replacements */
+        .text-\[\#800000\] { color: var(--color-maroon-dark); }
+        .bg-\[\#800000\] { background-color: var(--color-maroon-light); }
+        .text-\[\#6D2932\] { color: var(--color-maroon-dark); }
+        .hover\:text-\[\#D4AF37\]:hover { color: var(--color-gold) !important; }
+        .bg-\[\#800000\]\/10 { background-color: rgba(128, 0, 0, 0.1); }
+        .border-\[\#D4AF37\]\/30 { border-color: rgba(212, 175, 55, 0.3); }
+        .text-\[\#D4AF37\] { color: var(--color-gold); }
+
+        /* Enhanced Project Card hover effect */
+        .project-card {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Ensure smooth scroll for anchor links */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <nav class="bg-white sticky top-0 z-30 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <img src="MGL.png" style="width: 250px; height: 60px;" alt="Mayank Group Logo" class="h-12 w-auto mr-3">
+                    <span class="text-2xl font-bold"></span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="hover:text-[#D4AF37] transition font-semibold">Home</a>
+
+                    <div class="relative dropdown">
+                        <button class="text-[#D4AF37] flex items-center focus:outline-none font-semibold">
+                            About
+                            <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="absolute left-0 mt-2 w-48 bg-white border border-[#D4AF37]/30 rounded-lg shadow-lg text-[#800000] dropdown-menu hidden">
+                            <a href="index.html" class="block px-4 py-2 hover:bg-[#800000]/10 transition">About Mayank Group</a>
+                            <a href="PromiseMG.html" class="block px-4 py-2 hover:bg-[#800000]/10 transition">Promise Mayank Group</a>
+                            <a href="#" class="block px-4 py-2 bg-[#800000]/10 font-semibold transition">Mayank Group History</a>
+                        </div>
+                    </div>
+
+                    <div class="relative dropdown">
+                        <button class="hover:text-[#D4AF37] flex items-center focus:outline-none font-semibold">
+                            Projects
+                            <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="absolute left-0 mt-2 w-48 bg-white border border-[#D4AF37]/30 rounded-lg shadow-lg text-[#800000] dropdown-menu hidden">
+                            <a href="#projects" class="block px-4 py-2 hover:bg-[#800000]/10 transition">Previous Projects</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-[#800000]/10 transition">Vasai(E)</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-[#800000]/10 transition">Vasai(W)</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-[#800000]/10 transition">Nalasopara</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-[#800000]/10 transition">Boisar</a>
+                        </div>
+                    </div>
+                    <a href="redevelopment.html" class="hover:text-[#D4AF37] transition font-semibold">Redevelopments</a>
+                    <a href="#" class="hover:text-[#D4AF37] transition font-semibold">Partners</a>
+                    <a href="Contact.html" class="hover:text-[#D4AF37] transition font-semibold">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="hamburger" class="focus:outline-none">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div id="mobileMenu" class="md:hidden hidden flex-col space-y-1 pb-4 bg-white text-[#800000]">
+                <a href="index.html" class="block px-4 py-2 hover:bg-[#800000]/10 rounded transition font-semibold">Home</a>
+
+                <div class="relative">
+                    <button class="w-full flex justify-between items-center px-4 py-2 bg-[#800000]/10 font-semibold rounded transition focus:outline-none" onclick="toggleDropdown('aboutMobileDropdown')">
+                        About
+                        <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div id="aboutMobileDropdown" class="ml-4 mt-1 flex flex-col">
+                        <a href="index.html" class="block px-4 py-2 hover:bg-[#800000]/10 rounded transition">About Mayank Group</a>
+                        <a href="PromiseMG.html" class="block px-4 py-2 hover:bg-[#800000]/10 rounded transition">Promise Mayank Group</a>
+                        <a href="#" class="block px-4 py-2 text-[#D4AF37] bg-[#800000]/10 font-semibold rounded transition">Mayank Group History</a>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <button class="w-full flex justify-between items-center px-4 py-2 hover:bg-[#800000]/10 rounded transition font-semibold focus:outline-none" onclick="toggleDropdown('projectsMobileDropdown')">
+                        Projects
+                        <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div id="projectsMobileDropdown" class="hidden ml-4 mt-1 flex flex-col">
+                         <a href="#projects" class="block px-4 py-2 hover:bg-[#800000]/10 rounded transition">Previous Projects</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-[#800000]/10 rounded transition">Vasai(E)</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-[#800000]/10 rounded transition">Vasai(W)</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-[#800000]/10 rounded transition">Nalasopara</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-[#800000]/10 rounded transition">Boisar</a>
+                    </div>
+                </div>
+                <a href="redevelopment.html" class="block px-4 py-2 hover:bg-[#800000]/10 rounded transition font-semibold">Redevelopments</a>
+                <a href="#" class="block px-4 py-2 hover:bg-[#800000]/10 rounded transition font-semibold">Partners</a>
+                <a href="Contact.html" class="block px-4 py-2 hover:bg-[#800000]/10 rounded transition font-semibold">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <main class="max-w-7xl mx-auto px-4 sm:px-8 py-12">
+        <h1 class="font-cinzel text-4xl md:text-5xl font-bold text-[#D4AF37] mb-12 border-b-4 border-[#D4AF37] pb-3 text-center">
+            The Mayank Group Legacy: A History of Trust
+        </h1>
+
+        <section class="space-y-12 leading-relaxed">
+            
+            <div class="relative pl-8 sm:pl-16">
+                <div class="absolute left-0 w-4 h-4 bg-[#D4AF37] rounded-full mt-1.5 border-4 border-[#800000]"></div>
+                <div class="absolute left-2 sm:left-4 h-full w-0.5 bg-gray-300"></div>
+                
+                <h2 class="font-cinzel text-2xl font-bold mb-2">1995: The Foundation</h2>
+                <p class="mb-4 text-lg">
+                    The journey began with a singular focus on **quality and integrity** in the Vasai-Virar region. Our founder established the group to address the community's need for reliable, high-standard housing. The first few projects set a benchmark for commitment and ethical business practices that continues today.
+                </p>
+            </div>
+
+            <div class="relative pl-8 sm:pl-16">
+                <div class="absolute left-0 w-4 h-4 bg-[#D4AF37] rounded-full mt-1.5 border-4 border-[#800000]"></div>
+                <div class="absolute left-2 sm:left-4 h-full w-0.5 bg-gray-300"></div>
+                <h2 class="font-cinzel text-2xl font-bold mb-2">2000 - 2010: Rapid Growth & Area Mastery</h2>
+                <p class="mb-4 text-lg">
+                    This decade saw significant expansion across **Vasai East** and **Nalasopara**. We delivered numerous successful mid-size residential complexes, cementing our reputation as masters of local geography and compliant development. Our focus shifted to scalable models while retaining the personal touch of a community builder.
+                </p>
+            </div>
+
+            <div class="relative pl-8 sm:pl-16">
+                <div class="absolute left-0 w-4 h-4 bg-[#D4AF37] rounded-full mt-1.5 border-4 border-[#800000]"></div>
+                <div class="absolute left-2 sm:left-4 h-full w-0.5 bg-gray-300"></div>
+                <h2 class="font-cinzel text-2xl font-bold mb-2">2010 - Present: Modernization & Legacy Building</h2>
+                <p class="mb-4 text-lg">
+                    The group adapted to modern needs by pioneering complex **redevelopment projects** and embracing sustainable building technologies. Expansion into **Vasai West** and **Boisar** broadened our reach. We introduced the **'Imperial Lifestyle'** concept, focusing on providing enhanced amenities and superior living experiences.
+                </p>
+            </div>
+
+        </section>
+
+        <div class="my-16 border-t border-gray-200"></div>
+
+        <section id="projects">
+            <h2 class="font-cinzel text-3xl md:text-4xl font-bold mb-8 border-b-2 border-[#D4AF37] pb-2 text-center">
+                Our Completed Milestones (Previous Projects)
+            </h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="project-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
+                    <img src="project_placeholder_1.jpg" alt="Mayank Pride, Vasai East" class="w-full h-48 object-cover">
+                    <div class="p-5">
+                        <h3 class="font-cinzel text-xl font-bold mb-1">Mayank Pride</h3>
+                        <p class="text-sm text-gray-500 mb-3">Location: Vasai East</p>
+                        <p class="text-sm">A foundational project known for its robust construction and timely delivery, serving over 100 families.</p>
+                        <span class="inline-block mt-3 px-3 py-1 text-xs font-semibold text-white bg-[#D4AF37] rounded-full">Delivered 2005</span>
+                    </div>
+                </div>
+
+                <div class="project-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
+                    <img src="project_placeholder_2.jpg" alt="Imperial Residency, Nalasopara" class="w-full h-48 object-cover">
+                    <div class="p-5">
+                        <h3 class="font-cinzel text-xl font-bold mb-1">Imperial Residency</h3>
+                        <p class="text-sm text-gray-500 mb-3">Location: Nalasopara</p>
+                        <p class="text-sm">One of our largest complexes in the region, featuring modern layouts and dedicated green spaces.</p>
+                        <span class="inline-block mt-3 px-3 py-1 text-xs font-semibold text-white bg-[#D4AF37] rounded-full">Delivered 2012</span>
+                    </div>
+                </div>
+
+                <div class="project-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
+                    <img src="project_placeholder_3.jpg" alt="The Gold Tower, Vasai West" class="w-full h-48 object-cover">
+                    <div class="p-5">
+                        <h3 class="font-cinzel text-xl font-bold mb-1">The Gold Tower</h3>
+                        <p class="text-sm text-gray-500 mb-3">Location: Vasai West (Redevelopment)</p>
+                        <p class="text-sm">A successful redevelopment project, transforming an old structure into a premium, high-rise residential building.</p>
+                        <span class="inline-block mt-3 px-3 py-1 text-xs font-semibold text-white bg-[#D4AF37] rounded-full">Delivered 2018</span>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block bg-[#800000] text-white hover:bg-[#D4AF37] transition duration-300 py-3 px-6 rounded-lg text-lg font-semibold shadow-md">
+                    View All Projects
+                </a>
+            </div>
+
+        </section>
+    </main>
+    <footer
+        class="bg-white pt-12 border-t border-gray-200"
+    >
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12 text-center lg:text-left">
+
+                <div class="flex flex-col items-center lg:items-start col-span-1 lg:col-span-1">
+                    <div class="mb-6">
+                        <div class="w-full max-w-xs mx-auto lg:mx-0">
+                            <img
+                                src="MGL.png"
+                                alt="Imperial Lifestyle Logo"
+                                class="max-h-24 w-auto"
+                            />
+                        </div>
+                        <p class="mt-4 text-base leading-relaxed text-gray-600">
+                            Giving old cities, a new life… with a touch of luxury where memories once lived, dreams now begins to bloom. Where the land once wrote history, the future now writes its story.
+                            <br class="hidden sm:inline" />
+                            <strong class="text-sm block mt-2 text-[#6D2932]">Reach Out to us on…</strong>
+                        </p>
+                    </div>
+                    <div class="flex space-x-4 text-2xl mt-2">
+                        <a href="" class="text-blue-700 hover:text-[#D4AF37] transition duration-300" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="" class="text-red-600 hover:text-[#D4AF37] transition duration-300" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="" class="text-blue-800 hover:text-[#D4AF37] transition duration-300" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/mayank.group?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="text-pink-600 hover:text-[#D4AF37] transition duration-300" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-span-1">
+                    <h3 class="font-cinzel text-lg font-semibold mb-4 text-[#6D2932]">Legal</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-[#D4AF37] transition block">Terms and Conditions</a></li>
+                        <li><a href="#" class="hover:text-[#D4AF37] transition block">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-[#D4AF37] transition block">Copyright Notice</a></li>
+                        <li><a href="#" class="hover:text-[#D4AF37] transition block">Disclaimer</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-span-1">
+                    <h3 class="font-cinzel text-lg font-semibold mb-4 text-[#6D2932]">Properties</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-[#D4AF37] transition block">Vasai</a></li>
+                        <li><a href="#" class="hover:text-[#D4AF37] transition block">Nallasopara</a></li>
+                        <li><a href="#" class="hover:text-[#D4AF37] transition block">Boisar</a></li>
+                        <li><a href="#" class="hover:text-[#D4AF37] transition block">All Projects</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-span-1">
+                    <h4 class="font-cinzel text-lg font-semibold mb-4 text-[#6D2932]">Contact Details</h4>
+                    <address class="not-italic space-y-2 text-base text-gray-600">
+                        <p>Shop No.02, Tania Sargam CHS LTD., Near The Capital Mall, Nallasopara East 401209</p>
+                        <p class="font-semibold text-[#6D2932]">+91 9850841234</p>
+                        <p><a href="mailto:mayankreality@gmail.com" class="hover:text-[#D4AF37] transition">mayankreality@gmail.com</a></p>
+                    </address>
+                    <a href="Contact.html" class="mt-6 inline-block w-full py-3 bg-[#6D2932] text-white text-base font-semibold rounded-md shadow-md hover:bg-[#800000] transition duration-300 max-w-xs md:max-w-none">
+                        Contact Now
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <div class="bg-gray-100 border-t border-gray-200 py-4 text-sm text-gray-600">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center space-y-2 md:space-y-0">
+                <div class="text-center md:text-left">
+                    <p>
+                        &copy; 2025 Mayank Group. All Rights Reserved.
+                    </p>
+                </div>
+                <div class="text-center md:text-right">
+                    <ul class="flex justify-center md:justify-end space-x-3 sm:space-x-5">
+                        <li>
+                            <a href="#" class="hover:text-[#D4AF37] transition">Privacy & Policy</a>
+                        </li>
+                        <li class="hidden sm:inline text-[#6D2932]">|</li>
+                        <li>
+                            <a href="#" class="hover:text-[#D4AF37] transition">Site Map</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Note: The original provided script contained references to 'redevelopmentForm' which has been removed as it doesn't belong on the history page.
+        
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        // 1. Hamburger Menu Toggle
+        hamburger.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // 2. Function to toggle nested dropdowns (used in mobile menu)
+        function toggleDropdown(id) {
+            document.getElementById(id).classList.toggle('hidden');
+        }
+
+        // 3. Desktop Dropdown Toggles (Manual click toggles)
+        document.querySelectorAll('.dropdown').forEach(dropdown => {
+            const button = dropdown.querySelector('button');
+            const menu = dropdown.querySelector('.dropdown-menu');
+
+            if (button && menu) {
+                // Add click listener for toggling visibility
+                button.addEventListener('click', () => {
+                    // Close other menus
+                    document.querySelectorAll('.dropdown-menu').forEach(m => {
+                        if (m !== menu) m.classList.add('hidden');
+                    });
+                    // Toggle current menu
+                    menu.classList.toggle('hidden');
+                });
+                
+                // Add mouseover/mouseleave for traditional hover functionality
+                dropdown.addEventListener('mouseenter', () => menu.classList.remove('hidden'));
+                dropdown.addEventListener('mouseleave', () => menu.classList.add('hidden'));
+            }
+        });
+
+        // 4. Ensure the active mobile dropdown for 'About' is open on page load
+        document.addEventListener('DOMContentLoaded', () => {
+             const aboutMobileDropdown = document.getElementById('aboutMobileDropdown');
+             if (aboutMobileDropdown) {
+                 aboutMobileDropdown.classList.remove('hidden'); 
+             }
+        });
+
+        // 5. Close dropdowns if clicking outside
+        document.addEventListener('click', (event) => {
+            document.querySelectorAll('.dropdown').forEach(dropdown => {
+                if (!dropdown.contains(event.target)) {
+                    const menu = dropdown.querySelector('.dropdown-menu');
+                    if (menu) menu.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
